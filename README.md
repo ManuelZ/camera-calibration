@@ -11,6 +11,8 @@ Z \begin{pmatrix} u \\ v \\ 1 \end{pmatrix} = \begin{pmatrix} fx & 0 & cx \\ 0 &
 - fx, fy: focal length in pixels
 - cx, cy: the principal point —the pixel coordinate of the point where the optial axis intersects the image plane with respect to the new origin— in pixels
 
+### Note: The focal length `f` is normally in meters, but it gets transformed into `fx` or `fy` when is multiplied by alpha or beta respectively, which are in pixels/meter.
+
 
 ### Coordinates
 There are four coordinates:
