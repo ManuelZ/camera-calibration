@@ -1,5 +1,7 @@
 ## Image plane
 
+In a camera the image plane is ﬁxed at the surface of the sensor chip [2].
+
 ![image](https://github.com/ManuelZ/camera-calibration/assets/115771/09f747da-70bc-4040-9115-d38fc13160cf)
 
 from [2]
