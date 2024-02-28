@@ -7,7 +7,9 @@ There are four coordinates:
 - The normalized coordinates
 - The pixel coordinates
 
-## Image plane
+## Perspective projection
+
+### Image plane
 
 In a camera the image plane is ﬁxed at the surface of the sensor chip [2].
 
