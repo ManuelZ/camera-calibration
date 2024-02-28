@@ -1,3 +1,12 @@
+
+## Coordinates
+
+There are four coordinates:
+- The world coordinates
+- The camera coordinates
+- The normalized coordinates
+- The pixel coordinates
+
 ## Image plane
 
 In a camera the image plane is ﬁxed at the surface of the sensor chip [2].
@@ -21,13 +30,6 @@ Z \begin{pmatrix} u \\ v \\ 1 \end{pmatrix} = \begin{pmatrix} fx & 0 & cx \\ 0 &
 ##### Note: The focal length `f` is normally in meters, but it gets transformed into `fx` or `fy` when is multiplied by alpha or beta respectively, which are in pixels/meter.
 
 
-### Coordinates
-
-There are four coordinates:
-- the world coordinates
-- the camera coordinates
-- the normalized coordinates
-- the pixel coordinates
 
 
 ## References
