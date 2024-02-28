@@ -9,7 +9,7 @@ Z \begin{pmatrix} u \\ v \\ 1 \end{pmatrix} = \begin{pmatrix} fx & 0 & cx \\ 0 &
 - Pixel plane: 0-u-v, fixed on the physical image plane.
 - K: The camera’s inner parameter matrix (o intrinsics). It is generally assumed that the camera’s internal parameters are fixed after manufacturing and will not change during usage.
 - fx, fy: focal length in pixels
-- cx, cy: the principal point —the pixel coordinate of the point where the optial axis intersects the image plane with respect to the new origin— in pixels
+- cx, cy: the principal point —the pixel coordinate of the point where the optical axis intersects the image plane with respect to the new origin— in pixels
 
 ### Note: The focal length `f` is normally in meters, but it gets transformed into `fx` or `fy` when is multiplied by alpha or beta respectively, which are in pixels/meter.
 
