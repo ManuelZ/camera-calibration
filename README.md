@@ -1,3 +1,10 @@
+## Image plane
+
+![image](https://github.com/ManuelZ/camera-calibration/assets/115771/09f747da-70bc-4040-9115-d38fc13160cf)
+
+from [2]
+
+
 ## Intrinsic matrix
 
 ```math 
@@ -23,10 +30,19 @@ There are four coordinates:
 
 ## References
 ```
-{
+[1] {
   title = {14 Lectures on Visual SLAM: From Theory to Practice},
+  subtitle={Fundamental Algorithms In MATLAB® Second, Completely Revised, Extended And Updated Edition}
+  edition={2}
   publisher = {Publishing House of Electronics Industry},
   year = {2017},
   author = {Xiang Gao and Tao Zhang and Yi Liu and Qinrui Yan},
+}
+
+[2]{
+title = {Robotics, Vision and Control}
+publisher = {Springer Cham}
+year={2017}
+author={Peter Corke}
 }
 ```
