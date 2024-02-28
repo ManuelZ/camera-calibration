@@ -4,14 +4,18 @@
 There are four coordinates:
 - The world coordinates
 - The camera coordinates
-- The normalized coordinates
-- The pixel coordinates
+- The normalized coordinates: The normalized coordinates can be seen as a point in the z=1 plane (the "normalized plane") in front of the camera [1, p. 81].
+- The pixel coordinates: coordinate system o'-u-v fixed on the physical imaging plane. The origin o′ is in the upper left corner of the image, the u axis is parallel to the x axis, and the v axis is parallel to the y axis. We set the pixel
+coordinates to scale α times on the u axis and β times on v. At the same time, the origin is translated by $[cx , cy ]^T$. [1, p. 79].
+
+
 
 ## Perspective projection
 
 ### Image plane
 
 In a camera the image plane is ﬁxed at the surface of the sensor chip [2].
+In the perspective central projection model, it's located at a distance f (focal length) from the camera plane.
 
 ![image](https://github.com/ManuelZ/camera-calibration/assets/115771/09f747da-70bc-4040-9115-d38fc13160cf)
 
