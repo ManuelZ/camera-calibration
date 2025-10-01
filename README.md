@@ -45,7 +45,7 @@ Summary:
 
   $P_c = [X/Z,Y/Z,1]^T$
 
-- *The coordinates of $P_c$ get distorted*
+- The coordinates of $P_c$ get distorted
 
 - The distorted points are converted with the intrinsic parameters:
 
@@ -54,10 +54,7 @@ Summary:
 Source: [1, p. 83].
 
 ---
-
-
----
-The point P' is the projection of the 3D point P (represented in camera coordinates) on the image plane, it can be calculated using similar triangles:
+The point $P'$ is the projection of the 3D point $P$ (represented in camera coordinates) on the image plane, it can be calculated using similar triangles:
 
 ![alt text](media/image-5.png)
 
@@ -65,18 +62,20 @@ Image from [1, p. 78]
 
 
 Obtaining this expression:
-```
-X' = f(X/Z)
-Y' = f(Y/Z)
-```
+
+
+$X' = f\frac{X}{Z}$
+
+$Y' = f\frac{Y}{Z}$
+
 
 Where:
-- X': x coordinate of the point P'.
-- Y': y coordinate of the point P'.
-- f: focal length, in meters.
-- X: x coordinate of the point 3D P (camera coordinates).
-- Y: y coordinate of the point 3D P (camera coordinates).
-- Z: z coordinate of the point 3D P (camera coordinates).
+- $X'$: x coordinate of the point $P'$.
+- $Y'$: y coordinate of the point $P'$.
+- $f$: focal length, in meters.
+- $X$: x coordinate of the point 3D $P$ (camera coordinates).
+- $Y$: y coordinate of the point 3D $P$ (camera coordinates).
+- $Z$: z coordinate of the point 3D $P$ (camera coordinates).
 
 All units are meters, including the focal length.
 
