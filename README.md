@@ -25,7 +25,7 @@ Source: [1, Ch. 4] and [2].
 
 Pin-hole model, image from [1, p. 78].
 
-The following image comes from [here](https://calib.io/blogs/knowledge-base/camera-models) and shows the same information.
+The following image comes from [here](https://calib.io/blogs/knowledge-base/camera-models) and shows the same information:
 
 ![alt text](media/image-2.png)
 
@@ -112,8 +112,7 @@ $v = f_y(\frac{Y}{Z}) + c_y$
 
 The focal length `f` is in meters and gets transformed into $f_x$ or $f_y$ (in pixels) when it's multiplied by $α$ or $β$, respectively. $c_x$ and $c_y$ are in pixels as well.
 
-With respect to the focal length, note this, from [3]:
-
+With respect to the focal length $f$, note this, from [3]:
 
     You are probably used to thinking of the focal length in the context of lenses, in which case the
     focal length is a property of a particular lens, not the projection geometry. This is the result of
@@ -130,22 +129,7 @@ The following images from [here](https://robotacademy.net.au/masterclass/how-ima
 
 ![alt text](media/image-3.png)
 
-
-The perspective central projection model and the pin-hole model are the same thing, but from different perspectives.
-
-
-## Intrinsic matrix
-
-```math 
-Z \begin{pmatrix} u \\ v \\ 1 \end{pmatrix} = \begin{pmatrix} fx & 0 & cx \\ 0 & fy & cy \\ 0 & 0 & 1 \end{pmatrix} \begin{pmatrix} X \\ Y \\ Z \end{pmatrix} \overset{\Delta}{=} \boldsymbol{KP}
-```
-
-- Pixel plane: 0-u-v, fixed on the physical image plane.
-- K: The camera’s inner parameter matrix (or intrinsics). It's's generally assumed that the camera' internal parameters are fixed after manufacturing and will not change during usage.
-- $f_x$, $f_y$: focal length in pixels.
-- $c_x$, $c_y$: the principal point —the pixel coordinate of the point where the optical axis intersects the image plane with respect to the new origin— in pixels.
-
-Also:
+With respect to $f_x$ and $f_y$:
 
     Note that we have introduced two different focal lengths; the reason for this is that the individual 
     pixels on a typical low-cost imager are rectangular rather than square. The focal length fx, for 
@@ -157,6 +141,9 @@ Also:
     directly measurable. We can derive only the combinations fx = F·sx and fy = F·sy without actually 
     dismantling the camera and measuring its components directly.
 
+
+
+The perspective central projection model and the pin-hole model are the same thing, but from different perspectives.
 [Source](https://robotacademy.net.au/masterclass/how-images-are-formed/?lesson=741)
 
 
