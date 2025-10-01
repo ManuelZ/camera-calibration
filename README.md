@@ -73,9 +73,9 @@ Where:
 - $X'$: x coordinate of the point $P'$
 - $Y'$: y coordinate of the point $P'$
 - $f$: focal length, in meters
-- $X$: x coordinate of the point 3D $P$ (camera coordinates)
-- $Y$: y coordinate of the point 3D $P$ (camera coordinates)
-- $Z$: z coordinate of the point 3D $P$ (camera coordinates)
+- $X$: x coordinate of the 3D point $P$ (camera coordinates)
+- $Y$: y coordinate of the 3D point $P$ (camera coordinates)
+- $Z$: z coordinate of the 3D point $P$ (camera coordinates)
 
 All units are in meters, including the focal length.
 
@@ -144,6 +144,18 @@ With respect to $f_x$ and $f_y$:
 
 
 The perspective central projection model and the pin-hole model are the same thing, but from different perspectives.
+
+
+## Intrinsic matrix
+
+```math 
+Z \begin{pmatrix} u \\ v \\ 1 \end{pmatrix} = \begin{pmatrix} fx & 0 & cx \\ 0 & fy & cy \\ 0 & 0 & 1 \end{pmatrix} \begin{pmatrix} X \\ Y \\ Z \end{pmatrix} \overset{\Delta}{=} \boldsymbol{KP}
+```
+- K: The camera’s inner parameter matrix (or intrinsics). It's's generally assumed that the camera' internal parameters are fixed after manufacturing and will not change during usage.
+- $f_x$, $f_y$: focal length in pixels.
+- $c_x$, $c_y$: the principal point —the pixel coordinate of the point where the optical axis intersects the image plane with respect to the new origin— in pixels.
+
+
 [Source](https://robotacademy.net.au/masterclass/how-images-are-formed/?lesson=741)
 
 
