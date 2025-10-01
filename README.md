@@ -114,15 +114,14 @@ The focal length `f` is in meters and gets transformed into $f_x$ or $f_y$ (in p
 
 With respect to the focal length, note this, from [3]:
 
-"""
-You are probably used to thinking of the focal length in the context of lenses, in which case the
-focal length is a property of a particular lens, not the projection geometry. This is the result of
-a common abuse of terminology. It might be better to say that the "projection distance" is the 
-property of the geometry and the "focal length" is the property of the lens. The f in the previous
-equations is really the projection distance. For a lens, the image is in focus only if the focus
-length of the configuration matches the focal length of the lens, so people tend to use the terms
-interchangeably.
-"""
+
+    You are probably used to thinking of the focal length in the context of lenses, in which case the
+    focal length is a property of a particular lens, not the projection geometry. This is the result of
+    a common abuse of terminology. It might be better to say that the "projection distance" is the 
+    property of the geometry and the "focal length" is the property of the lens. The f in the previous
+    equations is really the projection distance. For a lens, the image is in focus only if the focus
+    length of the configuration matches the focal length of the lens, so people tend to use the terms
+    interchangeably.
 
 The following images from [here](https://robotacademy.net.au/masterclass/how-images-are-formed/?lesson=741) show this difference between the _focal length_ $f$ and the _projection distance_ $Zi$.
 
@@ -147,16 +146,15 @@ Z \begin{pmatrix} u \\ v \\ 1 \end{pmatrix} = \begin{pmatrix} fx & 0 & cx \\ 0 &
 - $c_x$, $c_y$: the principal point —the pixel coordinate of the point where the optical axis intersects the image plane with respect to the new origin— in pixels.
 
 Also:
-"""
-Note that we have introduced two different focal lengths; the reason for this is that the individual pixels on a 
-typical low-cost imager are rectangular rather than square. The focal length fx, for example, is actually the product 
-of the physical focal length of the lens and the size sx of the individual imager elements (this should make sense 
-because sx has units of pixels per millimeter, while f has units of millimeters, which means that fx is in the required
-units of pixels). Of course, similar statements hold for fy and sy. It is important to keep in mind, though, that 
-sx and sy cannot be measured directly via any camera calibration process, and neither is the physical focal length 
-f directly measurable. We can derive only the combinations fx = F·sx and fy = F·sy without actually dismantling the
-camera and measuring its components directly.
-"""
+
+    Note that we have introduced two different focal lengths; the reason for this is that the individual pixels on a 
+    typical low-cost imager are rectangular rather than square. The focal length fx, for example, is actually the product 
+    of the physical focal length of the lens and the size sx of the individual imager elements (this should make sense 
+    because sx has units of pixels per millimeter, while f has units of millimeters, which means that fx is in the required
+    units of pixels). Of course, similar statements hold for fy and sy. It is important to keep in mind, though, that 
+    sx and sy cannot be measured directly via any camera calibration process, and neither is the physical focal length 
+    f directly measurable. We can derive only the combinations fx = F·sx and fy = F·sy without actually dismantling the
+    camera and measuring its components directly.
 
 [Source](https://robotacademy.net.au/masterclass/how-images-are-formed/?lesson=741)
 
