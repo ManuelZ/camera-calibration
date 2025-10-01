@@ -14,10 +14,10 @@ The transformation of a point in the world to the camera coordinates is achieved
     - The distance between the image plane and the camera plane is the focal length $f$ (in meters). 
     - There is the physical image plane behind the camera plane, where an inverted image is formed, and an ideal image plane in front of the camera plane, where a non-inverted image is formed (different signs, but equivalent).
 
-- **The camera normalized coordinates:** Normalized coordinates are obtained by projecting the 3D camera coordinates onto a 2D plane at Z=1, removing depth information. This creates a simplified 2D representation $[X/Z, Y/Z, 1]$. The transformation of a point in the camera coordinates to the normalized coordinates is achieved by: $[X/Z, Y/Z, 1]^T$
+- **The camera normalized coordinates:** Normalized coordinates are obtained by projecting the 3D camera coordinates onto a 2D plane at $Z=1$, removing depth information. The transformation of a point $[X, Y, Z]$ in camera coordinates to the normalized coordinates is achieved by: $[\frac{X}{Z}, \frac{Y}{Z}, 1]^T$
 
 - **The pixel coordinates:** coordinate system o'-u-v fixed on the physical imaging plane. The origin o′ is in the upper left corner of the image, the u axis is parallel to the x axis, and the v axis is parallel to the y axis. We set the pixel coordinates to scale α times on the u axis and β times on v. At the same time, the origin is translated by $[cx, cy]^T$. [1, p. 79].
-The transformation of a point in the camera normalized coordinates to the pixel coordinates is achieved by: $P_{uv} = [u, v]^T = K([X/Z, Y/Z, 1]^T)$ where $K$ is the intrinsic matrix.
+The transformation of a point in the camera normalized coordinates to the pixel coordinates is achieved by: $P_{uv} = [u, v]^T = K([\frac{X}{Z}, \frac{Y}{Z}, 1]^T)$ where $K$ is the intrinsic matrix.
 
 Source: [1, Ch. 4] and [2].
 
@@ -43,7 +43,7 @@ Summary:
 
 - $\tilde{P_c}$ is projected to the normalized plane Z=1 to get _normalized_ camera coodinates:
 
-  $P_c = [X/Z,Y/Z,1]^T$
+  $P_c = [\frac{X}{Z},\frac{Y}{Z},1]^T$
 
 - The coordinates of $P_c$ get distorted
 
