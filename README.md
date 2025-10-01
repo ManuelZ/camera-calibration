@@ -147,14 +147,15 @@ Z \begin{pmatrix} u \\ v \\ 1 \end{pmatrix} = \begin{pmatrix} fx & 0 & cx \\ 0 &
 
 Also:
 
-    Note that we have introduced two different focal lengths; the reason for this is that the individual pixels on a 
-    typical low-cost imager are rectangular rather than square. The focal length fx, for example, is actually the product 
-    of the physical focal length of the lens and the size sx of the individual imager elements (this should make sense 
-    because sx has units of pixels per millimeter, while f has units of millimeters, which means that fx is in the required
-    units of pixels). Of course, similar statements hold for fy and sy. It is important to keep in mind, though, that 
-    sx and sy cannot be measured directly via any camera calibration process, and neither is the physical focal length 
-    f directly measurable. We can derive only the combinations fx = F·sx and fy = F·sy without actually dismantling the
-    camera and measuring its components directly.
+    Note that we have introduced two different focal lengths; the reason for this is that the individual 
+    pixels on a typical low-cost imager are rectangular rather than square. The focal length fx, for 
+    example, is actually the product of the physical focal length of the lens and the size sx of the 
+    individual imager elements (this should make sense because sx has units of pixels per millimeter, 
+    while f has units of millimeters, which means that fx is in the required units of pixels). Of course, 
+    similar statements hold for fy and sy. It is important to keep in mind, though, that sx and sy cannot 
+    be measured directly via any camera calibration process, and neither is the physical focal length f 
+    directly measurable. We can derive only the combinations fx = F·sx and fy = F·sy without actually 
+    dismantling the camera and measuring its components directly.
 
 [Source](https://robotacademy.net.au/masterclass/how-images-are-formed/?lesson=741)
 
