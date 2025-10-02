@@ -163,24 +163,22 @@ Z \begin{pmatrix} u \\ v \\ 1 \end{pmatrix} = \begin{pmatrix} fx & 0 & cx \\ 0 &
 ```
 [1] {
   title = {14 Lectures on Visual SLAM: From Theory to Practice},
-  subtitle={Fundamental Algorithms In MATLAB® Second, Completely Revised, Extended And Updated Edition}
-  edition={2}
   publisher = {Publishing House of Electronics Industry},
   year = {2017},
   author = {Xiang Gao and Tao Zhang and Yi Liu and Qinrui Yan},
 }
 
 [2] {
-  title = {Robotics, Vision and Control}
-  publisher = {Springer Cham}
-  year = {2017}
+  title = {Robotics, Vision and Control},
+  publisher = {Springer Cham},
+  year = {2017},
   author = {Peter Corke}
 }
 
 [3] {
-  title = {Learning OpenCV 3}
-  publisher = {O’Reilly Media}
-  year = {2016}
+  title = {Learning OpenCV 3},
+  publisher = {O’Reilly Media},
+  year = {2016},
   author = {Adrian Kaehler}
 }
 ```
